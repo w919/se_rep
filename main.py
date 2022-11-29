@@ -22,4 +22,4 @@ async def predict(item: Item):
    text = ''
    for i in range(len(output)):
       text += (output[i].get('generated_text') + '\n')
-
+   return {"generated_text": text}
