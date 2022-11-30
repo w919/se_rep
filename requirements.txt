@@ -3,5 +3,4 @@ requests
 fastapi
 pydantic
 transformers
-uvicorn
 tensorflow
