@@ -9,14 +9,12 @@
 Параметры:
 lenght (по умолчанию 120) - количество знаков сгенерированного текста.
 num_seq (по умолчанию 10)- количество различных вариантов сгенерированного текста.
-
+Запуст API: `uvicorn main:app --reload`
 Пример запроса:
-'
-curl -X 'POST' \
+`curl -X 'POST' \
   'http://127.0.0.1:8000/generate/?length=300&num_seq=1' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
   -d '{
   "text": "English text sample"
-}'
-'
+}'`
